@@ -21,6 +21,6 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Instance-1"
+    Name = "Instance-2-cloud"
   }
 }
