@@ -20,7 +20,7 @@ resource "aws_instance" "myec2" {
   ami    = data.aws_ami.myami.id 
   instance_type = "t2.micro"
 tags = {
-    Name = "dev-env-1"
+    Name = "dev-env-01"
   }
  
 }
@@ -28,8 +28,6 @@ tags = {
 resource "aws_instance" "myec2-2" {
   ami    = data.aws_ami.myami.id 
   instance_type = "t2.micro"
-tags = {
-    Name = "dev-env-2"
-  }
+
  
 }
